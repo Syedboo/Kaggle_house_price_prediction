@@ -35,7 +35,7 @@ This project implements a robust machine learning pipeline to predict house pric
 train_df, test_df = load_data("train.csv", "test.csv")
 
 
-**### 2. 🧼 Data Preprocessing**
+2. 🧼 Data Preprocessing
 Dropped unnecessary features (Id)
 
 Filled missing numeric values with median
@@ -44,7 +44,7 @@ Categorical features filled with "Missing" and One-Hot Encoded
 
 Handled skewed numeric features using log1p transformation
 
-**### 3. 🔧 Pipeline and Model**
+3. 🔧 Pipeline and Model
 Combined numeric and categorical pipelines using ColumnTransformer
 
 Used XGBRegressor with:
@@ -52,14 +52,14 @@ Used XGBRegressor with:
   XGBRegressor(n_estimators=500, learning_rate=0.05, max_depth=4)
 
 
-**### 4. 📊 Model Evaluation**
+4. 📊 Model Evaluation
 5-fold cross-validation results:
 
 Average R²: ~0.89
 
 Average RMSE: ~25,900
 
-**### 5. 📤 Submission File**
+5. 📤 Submission File
 Generates a valid Kaggle submission:
 Id,SalePrice
 1461,208500.0
