@@ -29,7 +29,7 @@ This project implements a robust machine learning pipeline to predict house pric
 
 ## 🛠️ Machine Learning Workflow
 
-### 1. 📦 Data Loading
+1. 📦 Data Loading
 
 ```python
 train_df, test_df = load_data("train.csv", "test.csv")
